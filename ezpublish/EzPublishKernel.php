@@ -22,7 +22,7 @@ use Symfony\Bundle\WebProfilerBundle\WebProfilerBundle;
 use Symfony\Component\Config\Loader\LoaderInterface;
 use Sensio\Bundle\GeneratorBundle\SensioGeneratorBundle;
 use Tedivm\StashBundle\TedivmStashBundle;
-use Keyteq\Bundle\DemoSiteBundle\KeyteqDemoSiteBundle;
+
 
 class EzPublishKernel extends Kernel
 {
@@ -47,7 +47,7 @@ class EzPublishKernel extends Kernel
             new EzPublishLegacyBundle(),
             new EzSystemsDemoBundle(),
             new EzPublishRestBundle(),
-            new KeyteqDemoSiteBundle(),
+            new Keyteq\Bundle\DemoSiteBundle\KeyteqDemoSiteBundle(),
         );
 
         if ( $this->getEnvironment() === 'dev' ||

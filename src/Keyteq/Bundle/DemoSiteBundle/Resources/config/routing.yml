@@ -1,0 +1,3 @@
+keyteq_demo_site_homepage:
+    pattern:  /demo/{name}
+    defaults: { _controller: KeyteqDemoSiteBundle:Default:index }
