@@ -26,8 +26,12 @@
 
 <body>
 
+{% ez_legacy_include "design:parts/website_toolbar.tpl" with {
+'current_node_id': app.request.attributes.get('locationId')
+} %}
+
 <div class="container">
-    <h1>eZ 5 Demo</h1>
+    <h1>{% block title %}eZ 5 Demo{% endblock title %}</h1>
 </div>
 
 <div class="container">

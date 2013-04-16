@@ -37,6 +37,7 @@ ShowHiddenNodes=false
 [DesignSettings]
 SiteDesign=ezdemo
 AdditionalSiteDesignList[]
+AdditionalSiteDesignList[]=ezexceed
 AdditionalSiteDesignList[]=ezflow
 AdditionalSiteDesignList[]=base
 AdditionalSiteDesignList[]=standard
