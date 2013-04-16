@@ -1,0 +1,58 @@
+{
+    "name" : "keyteq/ez5",
+    "description": "A starting point for creating eZ Publish 5 projects.",
+    "version": "0.1.0",
+    "type": "project",
+    "minimum-stability": "dev",
+
+    "require" : {
+        "php": ">=5.3.10",
+        "keyteq/devtools": "dev-master"
+    },
+    "repositories" : [{
+        "type" : "git",
+        "url" : "git@github.com:Keyteq/keyteq-devtools.git"
+    }
+    ],
+    "config":{
+        "vendor-dir": "plugins"
+    },
+    "scripts":{
+        "post-install-cmd":[
+            "Keyteq\\Bundle\\DevtoolsBundle\\Composer\\Installer::check",
+            "Keyteq\\Bundle\\DevtoolsBundle\\Composer\\Installer::cache",
+            "Keyteq\\Bundle\\DevtoolsBundle\\Composer\\Installer::moveSiteaccesses",
+            "Keyteq\\Bundle\\DevtoolsBundle\\Composer\\Installer::assets",
+            "Keyteq\\Bundle\\DevtoolsBundle\\Composer\\Installer::legacy",
+            "Keyteq\\Bundle\\DevtoolsBundle\\Composer\\Installer::legacyExtensions",
+            "Keyteq\\Bundle\\DevtoolsBundle\\Composer\\Installer::legacyAutoload",
+            "Keyteq\\Bundle\\DevtoolsBundle\\Composer\\Installer::legacyPermissions",
+            "Keyteq\\Bundle\\DevtoolsBundle\\Composer\\Installer::cache"
+        ],
+        "post-update-cmd":[
+            "Keyteq\\Bundle\\DevtoolsBundle\\Composer\\Installer::check",
+            "Keyteq\\Bundle\\DevtoolsBundle\\Composer\\Installer::cache",
+            "Keyteq\\Bundle\\DevtoolsBundle\\Composer\\Installer::moveSiteaccesses",
+            "Keyteq\\Bundle\\DevtoolsBundle\\Composer\\Installer::assets",
+            "Keyteq\\Bundle\\DevtoolsBundle\\Composer\\Installer::legacy",
+            "Keyteq\\Bundle\\DevtoolsBundle\\Composer\\Installer::legacyExtensions",
+            "Keyteq\\Bundle\\DevtoolsBundle\\Composer\\Installer::legacyAutoload",
+            "Keyteq\\Bundle\\DevtoolsBundle\\Composer\\Installer::legacyPermissions",
+            "Keyteq\\Bundle\\DevtoolsBundle\\Composer\\Installer::cache"
+        ]
+    },
+    "extra": {
+
+        "required-folders": {
+            "vendor": "eZ Publish is shipped with a folder with all framework dependencies.",
+            "ezpublish_legacy": "eZ Publish is shipped with a folder used for all legacy code and dependencies."
+        },
+        "extensions" : {
+            "ezexceed": {
+                "src" : "git@github.com:KeyteqLabs/ezexceed.git",
+                "branch": "1.2"
+            }
+        }
+    }
+}
+

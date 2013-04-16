@@ -1,0 +1,17 @@
+.idea
+.DS_STORE
+atlassian-ide-plugin.xml
+GETTING_STARTED.md
+LICENSE
+MODULE_CREATION.md
+vendor
+plugins
+ezpublish_legacy
+ezpublish/cache
+ezpublish/logs
+web/bundles
+web/design
+web/extension
+web/share
+web/var
+ezpublish/config/config_priv.yml
