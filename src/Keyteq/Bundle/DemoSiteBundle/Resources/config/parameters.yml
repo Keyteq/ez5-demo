@@ -1,0 +1,11 @@
+parameters:
+    ezsettings.ez5demo.location_view:
+        full:
+            landing_page:
+                template: KeyteqDemoSiteBundle:full:landing_page.html.twig
+                match:
+                    Identifier\ContentType: landing_page
+            folder:
+                template: KeyteqDemoSiteBundle:full:folder.html.twig
+                match:
+                    Identifier\ContentType: folder
